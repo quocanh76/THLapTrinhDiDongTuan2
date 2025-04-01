@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E9B6B6"
+    android:padding="16dp">
+
+    <!-- Calculator Display -->
+
+      <TextView
+        android:id="@+id/display2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#EFE2E2"
+        android:gravity="end"
+        android:padding="16dp"
+        android:layout_marginTop="70dp"
+        android:textColor="@android:color/black"
+        android:text="0"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@android:color/darker_gray"
+        android:gravity="end"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:text="0"
+        android:textSize="80dp" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="#A1C7E6"
+        android:padding="8dp"
+        app:columnCount="4"
+        app:rowCount="5">
+
+        <!-- Buttons Grid -->
+        <Button
+            android:id="@+id/btn_del"
+            android:backgroundTint="#9E4A4A"
+            android:text="DEL"
+            app:layout_column="0"
+            app:layout_columnSpan="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:backgroundTint="#9E4A4A"
+            android:text="C"
+            app:layout_column="1"
+            app:layout_columnSpan="2"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/btn_equal"
+            android:backgroundTint="#2C8AE2"
+            android:text="="
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:text="1"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:text="2"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:text="3"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/btn_div"
+            android:backgroundTint="#36D3A3"
+            android:text="/"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:text="4"
+            app:layout_column="0"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:text="5"
+            app:layout_column="1"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:text="6"
+            app:layout_column="2"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/btn_sub"
+            android:backgroundTint="#36D3A3"
+            android:text="-"
+            app:layout_column="3"
+            app:layout_row="2" />
+
+        <Button
+            android:id="@+id/btn7"
+            android:text="7"
+            app:layout_column="0"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/btn8"
+            android:text="8"
+            app:layout_column="1"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/btn9"
+            android:text="9"
+            app:layout_column="2"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/btn_mul"
+            android:backgroundTint="#36D3A3"
+            android:text="X"
+            app:layout_column="3"
+            app:layout_row="3" />
+
+        <Button
+            android:id="@+id/btn_dot"
+            android:text="."
+            app:layout_column="0"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/btn0"
+            android:text="0"
+            app:layout_column="1"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/btn_rem"
+            android:backgroundTint="#36D3A3"
+            android:text="%"
+            app:layout_column="2"
+            app:layout_row="4" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:backgroundTint="#36D3A3"
+            android:text="+"
+            app:layout_column="3"
+            app:layout_row="4" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>
